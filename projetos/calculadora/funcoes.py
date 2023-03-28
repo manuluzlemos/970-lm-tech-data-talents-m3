@@ -17,3 +17,8 @@ def divisao(a, b):
         return 0
     
     return a/b
+
+def multiplicao(a, b):
+    if not (type(a) in (int, float) and type(b) in (int, float)):
+        raise TypeError()
+    return a*b

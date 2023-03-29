@@ -1,17 +1,17 @@
 def soma(a, b):
-    if not (type(a) in (int, float) and type(b) in (int, float)):
+    if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):
         raise TypeError(f'As entradas "a" e "b" devem ser tipos numéricos. Recebeu-se a = {a} ({type(a)}) e b = {b} ({type(b)})')
     
     return a+b
 
 def subtracao(a, b):
-    if not (type(a) in (int, float) and type(b) in (int, float)):
+    if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):
         raise TypeError(f'As entradas "a" e "b" devem ser tipos numéricos. Recebeu-se a = {a} ({type(a)}) e b = {b} ({type(b)})')
 
     return a-b
 
 def divisao(a, b):
-    if not (type(a) in (int, float) and type(b) in (int, float)):
+    if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):
         raise TypeError(f'As entradas "a" e "b" devem ser tipos numéricos. Recebeu-se a = {a} ({type(a)}) e b = {b} ({type(b)})')
     
     if b == 0:
@@ -21,6 +21,6 @@ def divisao(a, b):
     return a/b
 
 def multiplicacao(a, b):
-    if not (type(a) in (int, float) and type(b) in (int, float)):
+    if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):
         raise TypeError(f'As entradas "a" e "b" devem ser tipos numéricos. Recebeu-se a = {a} ({type(a)}) e b = {b} ({type(b)})')
     return a*b

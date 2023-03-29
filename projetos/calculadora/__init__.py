@@ -1,4 +1,4 @@
-from funcoes import soma, subtracao, divisao, multiplicacao
+from funcoes import *
 
 funcoes = {
     "soma": soma,
